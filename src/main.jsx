@@ -8,9 +8,9 @@ import Layout from './Components/Layout.jsx'
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
 
-    <ThemeProvider theme = {theme}>
-        <App />
-    </ThemeProvider>
+
+        <Layout />
+
  
   </React.StrictMode>,
 )

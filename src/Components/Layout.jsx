@@ -1,40 +1,42 @@
-import { Grid, Button } from "@mui/material";
+import { Grid, Button, Box } from "@mui/material";
 import './App.css';
 
 const Layout = () => {
     return ( <>
-    <div className="App">
-    <Grid container spacing={3}>
-  <Grid xs={4}>
+    {/* <div className="App"> */}
 
-    <Button variant="contained">My Button</Button>
+    <section>
+    <Grid container justifyContent="space-between" textAlign="center" gap={4}>
+    <Grid xs={12} >
+
+  <Box bgcolor="skyblue" height={70}>  NavBar</Box>
     
    
   </Grid>
 
-  <Grid xs={4}>
-   <Button variant="contained">My Button</Button>
-  </Grid>
-  <Grid xs={4}>
-   <Button variant="contained">My Button</Button>
+  
+  <Grid xs={2}>
+
+  <Box bgcolor="pink" height={300}>  SideBar</Box>
+    
+   
   </Grid>
 
-  <Grid xs={4}>
-   <Button variant="contained">My Button</Button>
-  </Grid>
+  <Grid  xs={6}>
+   <Box bgcolor="red" height={500}>
 
-  <Grid xs={4}>
-   <Button variant="contained">My Button</Button>
-  </Grid>
 
-  <Grid xs={4}>
-   <Button variant="contained">My Button</Button>
+   Feed</Box>
   </Grid>
-
+  <Grid  xs={3}>
+  <Box bgcolor="yellow" height={300}>  RightBar</Box>
+  </Grid>
 
 </Grid>
     
-    </div>
+    </section>
+ 
+    {/* </div> */}
 
     </> );
 }
