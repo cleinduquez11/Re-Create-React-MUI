@@ -1,44 +1,44 @@
-import { Grid, Button, Box } from "@mui/material";
-import './App.css';
+import { Grid, Box, GlobalStyles } from "@mui/material";
+import "./App.css";
+import ButtonAppBar from "./NavBar";
+import Feed from "./Feed";
 
 const Layout = () => {
-    return ( <>
-    {/* <div className="App"> */}
+  return (
+    <>
+      <GlobalStyles
+        styles={{
+          body: { backgroundColor: "#EDEEEB" },
+        }}
+      />
+      <ButtonAppBar />
 
-    <section>
-    <Grid container justifyContent="space-between" textAlign="center" gap={4}>
-    <Grid xs={12} >
+      <Grid container justifyContent="center" textAlign="center" gap={1}>
+        <Grid sm={1}>
+          <Box
+            mt={2}
+            display={{ xs: "none", sm: "block" }}
+            width="auto"
+            height={300}
+          ></Box>
+        </Grid>
 
-  <Box bgcolor="skyblue" height={70}>  NavBar</Box>
-    
-   
-  </Grid>
+        <Grid xs={10} sm={7}>
+          <Box height={500} width="auto" mt={6}>
+            <Feed />
+          </Box>
+        </Grid>
+        <Grid sm={2}>
+          <Box
+            display={{ xs: "none", sm: "block" }}
+            height={300}
+            width="auto"
+            mt={2}
+          ></Box>
+        </Grid>
+      </Grid>
+    </>
+  );
+};
 
-  
-  <Grid xs={2}>
-
-  <Box bgcolor="pink" height={300}>  SideBar</Box>
-    
-   
-  </Grid>
-
-  <Grid  xs={6}>
-   <Box bgcolor="red" height={500}>
-
-
-   Feed</Box>
-  </Grid>
-  <Grid  xs={3}>
-  <Box bgcolor="yellow" height={300}>  RightBar</Box>
-  </Grid>
-
-</Grid>
-    
-    </section>
- 
-    {/* </div> */}
-
-    </> );
-}
- 
 export default Layout;

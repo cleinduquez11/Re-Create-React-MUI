@@ -1,14 +1,11 @@
 import { Box } from "@mui/material";
 
 const RightBar = () => {
-    return ( <>
+  return (
+    <>
+      <Box></Box>
+    </>
+  );
+};
 
-<Box>
-
-RightBar
-</Box>
-
-    </> );
-}
- 
 export default RightBar;

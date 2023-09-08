@@ -1,16 +1,11 @@
 import { Box } from "@mui/material";
 
 const SideBar = () => {
-    return ( <>
-    
-    
-    <Box>
+  return (
+    <>
+      <Box></Box>
+    </>
+  );
+};
 
-SideBar
-</Box>
-
-    
-    </> );
-}
- 
 export default SideBar;
